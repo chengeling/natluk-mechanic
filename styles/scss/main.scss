@@ -1,0 +1,18 @@
+//SETUP
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+//Base
+@import "base/variables";
+//Layout Componentss
+@import "layout/header";
+@import "layout/about";
+@import "layout/hero";
+@import "layout/footer";

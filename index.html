@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="js/script.js" defer></script>
+    <title>Mechanik - NatLuk Project</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <h1 class="header__text">Logo</h1>
+        </div>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <i class="navigation__icon">
+                        <img src="images/oferta-icon.svg" alt="">
+                    </i>
+                    <a href="" class="navigation__link">Oferta</a>
+                </li>
+                <li class="navigation__item">
+                    <i class="navigation__icon">
+                        <img src="images/cennik-icon.svg" alt="">
+                    </i>
+                    <a href="" class="navigation__link">Cennik</a>
+                </li>
+                <li class="navigation__item">
+                    <i class="navigation__icon">
+                        <img src="images/opinie-icon.svg" alt="">
+                    </i>
+                    <a href="" class="navigation__link">Opinie</a>
+                </li>
+                <li class="navigation__item">
+                    <i class="navigation__icon">
+                        <img src="images/kontakt-icon.svg" alt="">
+                    </i>
+                    <a href="" class="navigation__link">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="navigation__hamburger-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header> 
+    <main class="container">
+        <section class="hero">
+            <div class="hero__left">
+                <div class="hero__info">
+                    <h2 class="hero__text">Tutaj nie ma miejsca na <span class="break"></span> niedokręcone śruby!</h2>
+                    <p class="hero__desc">Sprawdź naszą ofertę diagnostyki,<span class="break"></span> oraz napraw.</p>
+                    <div class="hero__buttons-wrapper">
+                        <a href="#" class="hero__btn">Oferta</a>
+                        <a href="#" class="hero__btn hero__btn--active">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__right">
+                <img class="hero__photo-right" src="images/Car.svg" alt="">
+            </div>
+        </section>
+        <section class="about about--light">
+            <div class="about__left">
+                <img class="about__photo about__photo-wallet" src="images/wallet.svg" alt="">
+            </div>
+            <div class="about__right">
+                <h3 class="about__header">Z nami, Twoje pieniądze są <span class="break"></span>bezpieczne</h3>
+                <p class="about__desc">Ceny usługi zawsze znasz przed jej rozpoczęciem pracy!</p>
+                <div class="about__btn-wrapper">
+                    <a href="#" class="about__btn">Cennik</a>
+                </div>
+            </div>
+        </section>
+        <section class="about about--dark">
+            <div class="about__left">
+                <h3 class="about__header">Zaufanie klientów to najlepsza<span class="break"></span> nagroda</h3>
+                <p class="about__desc">Zobacz, czemu klienci do nas wracają!</p>
+                <div class="about__btn-wrapper">
+                    <a href="#" class="about__btn">Opinie</a>
+                </div>
+            </div>
+            <div class="about__right">
+                <img src="images/hands.svg" alt="" class="about__photo about__photo-hands">
+            </div>
+        </section>
+        <section class="about about--light">
+            <div class="about__left">
+                <h3 class="about__header">Te auta bardzo lubimy naprawiać!</h3>
+                <p class="about__desc  about__desc-brands">Wiemy, jak zbudowane są samochody, jednak auto marki<span class="break"></span> Volkswagen i Audi znamy jak własną kieszień!</p>
+            </div>
+            <div class="about__right about__right-brands">
+                <img src="images/audi.svg" class="about__photo about__photo-brand" id="about__photo-audi" alt="">
+                <img src="images/volkswagen.svg" class="about__photo about__photo-brand" id="about__photo-volkswagen" alt="">
+            </div>
+        </section>
+        <section class="about about--dark">
+            <div class="about__left">
+                <h3 class="about__header">Tu jesteśmy</h3>
+                <div class="about__location-box">
+                    <img src="images/adres.svg" alt="" class="about__location-photo">
+                    <p class="about__location-text">
+                        Nazwa zakładu<span class="break"></span>
+                        ul. Mechaniczna 666<span class="break"></span>
+                        Suwałki 66-666
+                    </p>
+                </div>
+                <div class="about__location-box">
+                    <img src="images/telephone.svg" alt="" class="about__location-photo">
+                    <p class="about__location-text">
+                        Tel. 666-666-666<span class="break"></span>
+                        Tel2. 777-777-777
+                    </p>
+                </div>
+                <div class="about__location-box">
+                    <img src="images/email.svg" alt="" class="about__location-photo">
+                    <p class="about__location-text">
+                        E-mail: kazik@naprawa.pl
+                    </p>
+                </div>
+            </div>
+            <div class="about__right">
+                <iframe  class="about__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13234.130859741654!2d22.926031008011506!3d54.100589509196226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1607856845636!5m2!1spl!2spl" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__left">
+                <h2 class="footer__logo">Logo</h2>
+            </div>
+            <div class="footer__center">
+                <h2 class="footer__header">Skontaktuj się z nami</h2>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="" class="footer__link">Zapytaj o ofertę</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__link">Sprawdź opinie</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__link">Zadzwoń lub napisz</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <h2 class="footer__header">Social Media</h2>
+                <div class="footer__social-media-wrapper">
+                    <a href="" class="footer__link">
+                        <img src="images/instagram-icon.svg" alt="" class="footer__social-media-icon">
+                    </a>
+                    <a href="" class="footer__link">
+                        <img src="images/facebook-icon.svg" alt="" class="footer__social-media-icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,155 @@
+.about {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 58px 0;
+
+  &--light {
+    background-color: #203647;
+    box-shadow: -15px 0 50px rgba(0, 0, 0, 0.8);
+  }
+
+  &--dark {
+    background-color: #12232e;
+    box-shadow: inset 15px 0 50px rgba(0, 0, 0, 0.8);
+  }
+
+  &__right-brands {
+    display: flex;
+  }
+
+  &__photo-brand {
+    margin: 0 28px;
+    max-width: 100%;
+  }
+
+  &__right-brands:nth-child(2) {
+    height: 50%;
+  }
+
+  &__photo {
+    width: 15vw;
+    min-width: 258px;
+    max-width: 100%;
+  }
+
+  &__photo-hands {
+    min-width: 400px;
+  }
+
+  &__header {
+    font-family: $primary-font;
+    font-weight: $bold;
+    color: #fff;
+    font-size: 24px;
+    margin: 32px 0;
+  }
+
+  &__desc {
+    font-family: $secondary-font;
+    font-weight: $normal;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 32px;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    border: 3px solid #4da8da;
+    font-family: $primary-font;
+    font-weight: $medium;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 36px;
+    padding: 8px 0;
+    transition: background-color 0.5s ease;
+    width: 192px;
+  }
+
+  &__btn:hover {
+    background-color: #4da8da;
+  }
+
+  &__location-box {
+    display: flex;
+    align-self: center;
+    margin-bottom: 36px;
+  }
+
+  &__location-text {
+    font-family: $secondary-font;
+    font-weight: $medium;
+    color: #fff;
+    line-height: 36px;
+    font-size: 24px;
+    margin-left: 18px;
+  }
+
+  &__map {
+    border-radius: 18px;
+    width: 40vw;
+    height: 45vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 18px;
+
+    &--dark {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__right-brands {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__desc-brands {
+      display: none;
+    }
+
+    &__photo-brand {
+      margin: 40px 0;
+    }
+
+    &__header {
+      font-size: 32px;
+    }
+
+    &__location-text {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    &__map {
+      height: 25vh;
+      width: 60vw;
+    }
+
+    &__photo-hands {
+      min-width: 230px;
+    }
+
+    &__photo-wallet {
+      min-width: 181px;
+    }
+  }
+
+  #about__photo-volkswagen {
+    height: 108px;
+  }
+}
